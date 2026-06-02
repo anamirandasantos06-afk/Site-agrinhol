@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFuturo 2026 – IA e Tecnologia no Campo</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Exo 2 (display) + Source Serif 4 (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       PAINEL FLUTUANTE DE ACESSIBILIDADE (canto inferior esquerdo)
+  ============================================================ -->
+  <div class="a11y-panel" id="a11yPanel" role="region" aria-label="Painel de Acessibilidade">
+    <button class="a11y-toggle" id="a11yToggle" aria-expanded="false" aria-controls="a11yOptions" title="Acessibilidade">
+      <span class="a11y-icon">&#9784;</span>
+    </button>
+    <div class="a11y-options" id="a11yOptions" hidden>
+      <span class="a11y-label">Acessibilidade</span>
+      <button id="btnFontUp"   aria-label="Aumentar fonte">A+</button>
+      <button id="btnFontDown" aria-label="Diminuir fonte">A−</button>
+      <button id="btnTheme"    aria-label="Alternar modo escuro/claro">&#9790; / &#9788;</button>
+      <button id="btnRead"     aria-label="Leitura por voz">&#9654; Ler</button>
+      <button id="btnStop"     aria-label="Parar leitura">&#9646;&#9646; Parar</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="AgroFuturo 2026 – Início">
+        <span class="logo-icon">&#9752;</span>
+        <span class="logo-text">Agro<strong>Futuro</strong> <em>2026</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#destaque">Destaque</a></li>
+          <li><a href="#beneficios">IA no Campo</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#seminario">Seminário</a></li>
+          <li><a href="#comentarios">Comentários</a></li>
+        </ul>
+      </nav>
+      <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero" aria-labelledby="heroTitle">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-particles" aria-hidden="true" id="heroParticles"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">&#9679; AgroFuturo 2026</div>
+      <h1 id="heroTitle" class="hero-title">
+        Tecnologia Agrícola<br/>
+        <span class="gradient-text">Reforça o Papel do Brasil</span>
+      </h1>
+      <p class="hero-subtitle">
+        Inteligência Artificial, microrganismos e inovação digital
+        transformando o campo em protagonista global da segurança alimentar.
+      </p>
+      <div class="hero-ctas">
+        <a href="#beneficios" class="btn btn-primary">Explorar Inovações</a>
+        <a href="#seminario"  class="btn btn-outline">Participar do Seminário</a>
+      </div>
+      <div class="hero-stats" aria-label="Dados de destaque">
+        <div class="stat-item">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Benefícios da IA</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number">#1</span>
+          <span class="stat-label">Agro Sustentável</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number">2026</span>
+          <span class="stat-label">Visão de Futuro</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-dot"></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MAIN CONTENT (conteúdo principal para leitura de voz)
+  ============================================================ -->
+  <main id="mainContent">
+
+    <!-- ── SEÇÃO DESTAQUE ── -->
+    <section class="section section-destaque" id="destaque" aria-labelledby="destaqueTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Destaque Nacional</span>
+          <h2 id="destaqueTitle">Brasil e Inovação Agrícola</h2>
+          <p class="section-desc">
+            Como soluções digitais, biotecnologia e técnicas modernas estão
+            aumentando a produtividade e tornando o campo brasileiro mais sustentável.
+          </p>
+        </div>
+
+        <div class="destaque-grid">
+          <!-- Card texto principal -->
+          <article class="card card-destaque" aria-label="Brasil e inovação agrícola">
+            <div class="card-accent" aria-hidden="true"></div>
+            <h3>Brasil e Inovação Agrícola</h3>
+            <p>
+              O Brasil se destaca no cenário mundial por sua forte presença no agronegócio aliado
+              à tecnologia. O uso de soluções digitais, sensores e técnicas modernas vem ajudando
+              a aumentar a produtividade no campo e tornar a produção mais sustentável.
+            </p>
+            <p>
+              Com a evolução da agricultura, o país passa a ocupar um papel importante na criação
+              de práticas mais eficientes, capazes de atender à demanda global por alimentos
+              sem prejudicar o meio ambiente.
+            </p>
+          </article>
+
+          <!-- Imagem 1 -->
+          <div class="imagem imagem-destaque" role="img" aria-label="Imagem: campo agrícola brasileiro com tecnologia">
+            <img src="Foto1.png" alt="Campo agrícola brasileiro com tecnologia de precisão" loading="lazy" />
+            <div class="imagem-caption">Campo + Inovação: o novo paradigma brasileiro</div>
+          </div>
+
+          <!-- Card Biotecnologia -->
+          <article class="card card-hungria" aria-label="Biotecnologia no agronegócio">
+            <div class="card-icon-top" aria-hidden="true">&#128300;</div>
+            <h3>Biotecnologia no Agronegócio</h3>
+            <p>
+              A biotecnologia tem transformado a forma como o campo produz alimentos. O uso de
+              <strong>microrganismos no solo</strong> ajuda as plantas a se desenvolverem melhor e
+              reduz a necessidade de fertilizantes químicos.
+            </p>
+            <div class="card-highlight">
+              <span class="highlight-icon" aria-hidden="true">&#127807;</span>
+              <span>Essa abordagem torna a produção mais <strong>econômica e sustentável</strong>, além de
+              diminuir impactos ambientais — combinando ciência e natureza para melhorar o
+              desempenho das lavouras.</span>
+            </div>
+          </article>
+
+          <!-- Card IA no campo -->
+          <article class="card card-estrategia" aria-label="Inteligência Artificial no campo">
+            <div class="card-icon-top" aria-hidden="true">&#129302;</div>
+            <h3>Inteligência Artificial no Campo</h3>
+            <p>
+              A Inteligência Artificial está mudando a agricultura moderna. Com ela, é possível
+              analisar dados, prever cenários e automatizar processos no campo, ajudando
+              agricultores a tomarem decisões mais rápidas e eficientes.
+            </p>
+            <ul class="feature-list" aria-label="O que a IA proporciona ao campo">
+              <li><span aria-hidden="true">&#10003;</span> Aumento de produtividade</li>
+              <li><span aria-hidden="true">&#10003;</span> Redução de desperdícios</li>
+              <li><span aria-hidden="true">&#10003;</span> Gestão mais inteligente das lavouras</li>
+              <li><span aria-hidden="true">&#10003;</span> Sustentabilidade no campo</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Citação em destaque -->
+        <blockquote class="quote-block" aria-label="Citação sobre o futuro do agro">
+          <span class="quote-mark" aria-hidden="true">"</span>
+          <p>
+            A tecnologia não veio substituir o agricultor — veio potencializar o que ele
+            já faz de melhor. O campo inteligente é aquele que combina o conhecimento
+            da terra com a precisão dos dados, gerando mais com menos impacto.
+          </p>
+          <footer>— <cite>AgroFuturo 2026</cite>, conectando inteligência à terra de forma sustentável</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ── SEÇÃO BENEFÍCIOS DA IA ── -->
+    <section class="section section-beneficios" id="beneficios" aria-labelledby="beneficiosTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Inteligência Artificial</span>
+          <h2 id="beneficiosTitle">Benefícios da IA no Campo</h2>
+          <p class="section-desc">
+            A IA está mudando a agricultura moderna: analisa dados, prevê cenários e automatiza
+            processos, tornando o campo mais produtivo, eficiente e sustentável.
+          </p>
+        </div>
+
+        <!-- Introdução accordion -->
+        <div class="accordion" id="accordionIntro" role="region" aria-label="Contexto sobre IA no agro">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="accordionIntroBody">
+            <span class="acc-icon" aria-hidden="true">&#129302;</span>
+            IA no Campo: por que ela faz diferença?
+            <span class="acc-arrow" aria-hidden="true">&#9660;</span>
+          </button>
+          <div class="accordion-body" id="accordionIntroBody" hidden>
+            <p>
+              A Inteligência Artificial auxilia na análise de dados e no controle das atividades
+              agrícolas, tornando o processo mais eficiente. Com ela, agricultores tomam decisões
+              mais rápidas, reduzem desperdícios e conseguem uma gestão mais inteligente e
+              sustentável das lavouras — independentemente do tamanho da propriedade.
+            </p>
+          </div>
+        </div>
+
+        <!-- Grid de 6 benefícios -->
+        <div class="beneficios-grid" role="list" aria-label="Lista de benefícios da IA no campo">
+
+          <!-- 1. IA no Campo -->
+          <article class="benefit-card" role="listitem" aria-label="Benefício 1: IA no Campo">
+            <div class="benefit-number" aria-hidden="true">01</div>
+            <div class="benefit-icon" aria-hidden="true">&#129302;</div>
+            <h3>IA no Campo</h3>
+            <p>
+              A Inteligência Artificial auxilia na análise de dados e no controle das atividades
+              agrícolas, tornando o processo mais eficiente e as decisões mais assertivas.
+            </p>
+            <button class="benefit-expand" aria-expanded="false" aria-label="Ver mais sobre IA no Campo">
+              Ver mais <span aria-hidden="true">+</span>
+            </button>
+            <div class="benefit-extra" hidden>
+              <p>
+                Com a IA, é possível analisar grandes volumes de dados sobre solo, clima e
+                produção, identificar padrões invisíveis ao olho humano e gerar recomendações
+                precisas para cada etapa do cultivo — reduzindo riscos e aumentando a rentabilidade.
+              </p>
+            </div>
+          </article>
+
+          <!-- 2. Automação -->
+          <article class="benefit-card" role="listitem" aria-label="Benefício 2: Automação">
+            <div class="benefit-number" aria-hidden="true">02</div>
+            <div class="benefit-icon" aria-hidden="true">&#9881;</div>
+            <h3>Automação</h3>
+            <p>
+              Máquinas inteligentes realizam tarefas como plantio e colheita com mais precisão,
+              reduzindo o esforço humano e aumentando a produtividade das operações no campo.
+            </p>
+            <button class="benefit-expand" aria-expanded="false" aria-label="Ver mais sobre Automação">
+              Ver mais <span aria-hidden="true">+</span>
+            </button>
+            <div class="benefit-extra" hidden>
+              <p>
+                Tratores autônomos, pilotos automáticos e sistemas de pulverização inteligentes
+                operam com GPS e sensores avançados, garantindo precisão milimétrica e reduzindo
+                a necessidade de mão de obra intensiva — especialmente em grandes propriedades.
+              </p>
+            </div>
+          </article>
+
+          <!-- 3. Sustentabilidade -->
+          <article class="benefit-card" role="listitem" aria-label="Benefício 3: Sustentabilidade">
+            <div class="benefit-number" aria-hidden="true">03</div>
+            <div class="benefit-icon" aria-hidden="true">&#127807;</div>
+            <h3>Sustentabilidade</h3>
+            <p>
+              O uso da tecnologia permite reduzir desperdícios de água, fertilizantes e energia,
+              tornando o campo mais sustentável e equilibrado com o meio ambiente.
+            </p>
+            <button class="benefit-expand" aria-expanded="false" aria-label="Ver mais sobre Sustentabilidade">
+              Ver mais <span aria-hidden="true">+</span>
+            </button>
+            <div class="benefit-extra" hidden>
+              <p>
+                Com a IA como aliada, produtores conseguem aplicar insumos na quantidade certa,
+                no lugar certo e na hora certa — reduzindo o impacto ambiental, diminuindo custos
+                e contribuindo para uma agricultura cada vez mais responsável e lucrativa.
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /beneficios-grid -->
+      </div>
+    </section>
+
+    <!-- ── SEÇÃO GALERIA ── -->
+    <section class="section section-galeria" id="galeria" aria-labelledby="galeriaTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Galeria Visual</span>
+          <h2 id="galeriaTitle">O Campo do Futuro em Imagens</h2>
+        </div>
+        <div class="galeria-grid" role="list" aria-label="Galeria de imagens do agro tecnológico">
+
+          <div class="galeria-item" role="listitem">
+            <div class="imagem imagem-galeria" role="img" aria-label="Imagem: drones e tecnologia de precisão no campo">
+              <img src="Foto2.png" alt="Drone realizando monitoramento de cultura agrícola com sensores multiespectrais" loading="lazy" />
+            </div>
+            <div class="galeria-caption">
+              <h4>Monitoramento por Drones</h4>
+              <p>Câmeras RGB e multiespectrais analisadas por IA em tempo real</p>
+            </div>
+          </div>
+
+          <div class="galeria-item galeria-item--large" role="listitem">
+            <div class="imagem imagem-galeria" role="img" aria-label="Imagem: laboratório de microbiologia agrícola">
+              <img src="Foto3.png" alt="Laboratório de pesquisa com microrganismos fixadores de nitrogênio para agricultura" loading="lazy" />
+            </div>
+            <div class="galeria-caption">
+              <h4>Ciência de Microrganismos</h4>
+              <p>Bactérias que capturam nitrogênio do ar e reduzem dependência de fertilizantes</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SEÇÃO FORMULÁRIO + COMENTÁRIOS ── -->
+    <section class="section section-interacao" id="seminario" aria-labelledby="interacaoTitle">
+      <div class="container">
+        <div class="interacao-grid">
+
+          <!-- Formulário de inscrição -->
+          <div class="form-area" aria-labelledby="formTitle">
+            <div class="form-header">
+              <span class="section-tag">Seminário On-line</span>
+              <h2 id="formTitle" id="interacaoTitle">Venha Conhecer Melhor Como a IA Pode Ser uma Aliada do Campo</h2>
+              <p>Inscreva-se no nosso seminário on-line e explore o futuro da agricultura inteligente.</p>
+            </div>
+            <form class="inscricao-form" id="inscricaoForm" novalidate aria-label="Formulário de inscrição no seminário">
+              <div class="form-group">
+                <label for="nome">Nome completo <span aria-hidden="true" class="required">*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail <span aria-hidden="true" class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cidade">Cidade <span aria-hidden="true" class="required">*</span></label>
+                  <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required autocomplete="address-level2" />
+                </div>
+                <div class="form-group">
+                  <label for="estado">Estado</label>
+                  <input type="text" id="estado" name="estado" placeholder="UF" maxlength="2" autocomplete="address-level1" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pais">País</label>
+                <input type="text" id="pais" name="pais" placeholder="Brasil" autocomplete="country-name" />
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="btnInscrever">
+                <span>Inscrever-me Agora</span>
+                <span class="btn-arrow" aria-hidden="true">&#8594;</span>
+              </button>
+              <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <!-- Área de comentários -->
+          <div class="comments-area" id="comentarios" aria-labelledby="commentsTitle">
+            <div class="form-header">
+              <span class="section-tag">Interação</span>
+              <h2 id="commentsTitle">Deixe seu Comentário</h2>
+              <p>Compartilhe sua opinião sobre a IA no agronegócio.</p>
+            </div>
+            <div class="comment-form" aria-label="Formulário de comentário">
+              <div class="form-group">
+                <label for="commentAuthor">Seu nome</label>
+                <input type="text" id="commentAuthor" placeholder="Como devemos te chamar?" autocomplete="nickname" />
+              </div>
+              <div class="form-group">
+                <label for="commentText">Comentário</label>
+                <textarea id="commentText" rows="4" placeholder="Escreva seu comentário aqui..." aria-label="Caixa de comentário"></textarea>
+              </div>
+              <button class="btn btn-outline" id="btnComment">
+                Enviar Comentário <span aria-hidden="true">&#9993;</span>
+              </button>
+            </div>
+            <div class="comments-list" id="commentsList" aria-live="polite" aria-label="Lista de comentários">
+              <!-- comentários inseridos via JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /mainContent -->
+
+  <!-- ============================================================
+       RODAPÉ
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon" aria-hidden="true">&#9752;</span>
+        <span class="logo-text">Agro<strong>Futuro</strong> <em>2026</em></span>
+        <p class="footer-tagline">Conectando a inteligência e tecnologia à terra de forma sustentável.</p>
+      </div>
+      <div class="footer-refs" aria-label="Referências">
+        <h3>Referências</h3>
+        <ul>
+          <li>
+            <a href="https://www.bemagro.com/beneficios-inteligencia-artificial-no-campo/" target="_blank" rel="noopener noreferrer">
+              BemAgro – Benefícios da Inteligência Artificial no Campo
+            </a>
+          </li>
+          <li>
+            <a href="https://www.agrolink.com.br/noticias/o-campo-conectado--como-a-ia-vem-transformando-o-agro_514351.html" target="_blank" rel="noopener noreferrer">
+              AgroLink – O Campo Conectado: como a IA vem transformando o agro
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>AgroFuturo 2026 &deg; Conectando a inteligência tecnologia à terra de forma sustentável.</p>
+      <p class="footer-copy">&copy; 2026 AgroFuturo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
